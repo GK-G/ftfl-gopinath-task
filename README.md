@@ -81,6 +81,6 @@ Implement dynamic data loading (e.g., via Firebase or REST API).
 Make the UI fully responsive for different devices.
 Contact
 For any questions or clarifications, feel free to reach out at:
-📧 your-gopinath_nadar@outlook.com
+📧 gopinath_nadar@outlook.com
 
  🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
