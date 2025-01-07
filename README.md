@@ -1,16 +1,86 @@
-# ftfl
+Flutter Version: 3.13.9
+Dart Version: 3.1.5
 
-A new Flutter project.
+FTFL Technology - Cards and Wallet Screen
+This Flutter project is an interview task for FTFL Technology. The goal is to design a Cards and Wallet Screen using reusable common widgets for an efficient and consistent UI.
 
-## Getting Started
+Overview
+This project demonstrates:
 
-This project is a starting point for a Flutter application.
+Reusability: Common widgets like FeatureCard and LimitCard are designed for consistent use across the application.
+Modular Design: The Cards and Wallet screen is built with scalable and clean code practices.
+Responsive UI: The widgets are flexible and adapt well to different screen sizes.
+Widgets
+FeatureCard
+A widget designed to display features using icons and titles.
 
-A few resources to get you started if this is your first Flutter project:
+Properties:
+title (String): Title text for the feature.
+icon (IconData): Icon representing the feature.
+Example:
+dart
+Copy code
+FeatureCard(  
+title: 'Transactions',  
+icon: Icons.swap_horiz,  
+)  
+LimitCard
+Displays key-value pair information, such as spending limits or balances.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Properties:
+title (String): The key or label text.
+value (String): The value to display.
+Example:
+dart
+Copy code
+LimitCard(  
+title: 'Wallet Balance',  
+value: '2500 USD',  
+)  
+Screens
+Cards Screen
+Displays a list of cards (credit/debit) with relevant actions.
+Includes the FeatureCard for quick actions (e.g., Add Card, View Transactions).
+Wallet Screen
+Displays wallet details like balance, spending limit, and recent transactions.
+Built using LimitCard and other reusable components.
+Project Structure
+plaintext
+Copy code
+lib/  
+├── Screens/  
+│   ├── CardsandWalletScreen.dart  #landing screen
+├── widgets/  
+│   ├── cards_screen.dart    # Reusable widgets  
+│   ├── wallet_screen.dart   # Reusable widgets 
+├── main.dart                 # Application entry point  
+How to Run
+Clone this repository:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+bash
+Copy code
+git clone https://github.com/GK-G/ftfl-gopinath-task.git  
+Navigate to the project directory:
+
+bash
+Copy code
+cd ftfl-wallet-task  
+Install dependencies:
+
+bash
+Copy code
+flutter pub get  
+Run the application:
+
+bash
+Copy code
+flutter run  
+Future Enhancements
+Add animations for better user experience.
+Implement dynamic data loading (e.g., via Firebase or REST API).
+Make the UI fully responsive for different devices.
+Contact
+For any questions or clarifications, feel free to reach out at:
+📧 your-gopinath_nadar@outlook.com
+
+ 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
